@@ -1,0 +1,188 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dexs NTree\n"
+"POT-Creation-Date: 2014-10-29 12:27+0100\n"
+"PO-Revision-Date: 2014-10-29 12:27+0100\n"
+"Last-Translator: \n"
+"Language-Team: PYTES.NET <info@pytes.net>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin.ntree.php:8
+msgid "TOC-Box Design"
+msgstr "TOC-Box Design"
+
+#: ../admin.ntree.php:11 ../class.system.php:427
+msgid "TOC Type"
+msgstr "TOC Typ"
+
+#: ../admin.ntree.php:15 ../class.system.php:429
+msgid "Class Names"
+msgstr "Klassennamen"
+
+#: ../admin.ntree.php:16 ../class.system.php:430
+msgid "Heading Elements"
+msgstr "Überschrift-Elemente"
+
+#: ../admin.ntree.php:19 ../class.system.php:433
+msgid "Use the post title as first TOC item"
+msgstr "Nutze den Beitragstitel als erstes TOC Item"
+
+#: ../admin.ntree.php:22 ../class.system.php:436
+msgid "Suborder all toc items under the post title"
+msgstr "Ordner sämtliche TOC Items unter den Beitragstitel"
+
+#: ../admin.ntree.php:28
+msgid "TOC Box Title"
+msgstr "TOC Box Titel"
+
+#: ../admin.ntree.php:36
+msgid "TOC Box Alignment"
+msgstr "TOC Box Position"
+
+#: ../admin.ntree.php:40
+msgid "None"
+msgstr "None"
+
+#: ../admin.ntree.php:41
+msgid "Left"
+msgstr "Links"
+
+#: ../admin.ntree.php:42
+msgid "Right"
+msgstr "Rechts"
+
+#: ../admin.ntree.php:43
+msgid "Center"
+msgstr "Zentriert"
+
+#: ../admin.ntree.php:49 ../class.system.php:441
+msgid "TOC Box Border"
+msgstr "TOC Box Umrandung"
+
+#: ../admin.ntree.php:72 ../class.system.php:461
+msgid "TOC Box Background"
+msgstr "TOC Box Hintergrund"
+
+#: ../admin.ntree.php:84 ../class.system.php:470
+msgid "TOC List Tag"
+msgstr "TOC Listen-Tag"
+
+#: ../admin.ntree.php:88 ../class.system.php:472
+msgid "UL"
+msgstr "UL"
+
+#: ../admin.ntree.php:89 ../class.system.php:473
+msgid "OL"
+msgstr "OL"
+
+#: ../admin.ntree.php:95 ../class.system.php:478
+msgid "TOC List Design"
+msgstr "TOC Listen-Design"
+
+#: ../admin.ntree.php:99 ../class.system.php:480
+msgid "Numeric"
+msgstr "Numerisch"
+
+#: ../admin.ntree.php:100 ../class.system.php:481
+msgid "Level Numeric"
+msgstr "Level Numerisch"
+
+#: ../admin.ntree.php:101 ../class.system.php:482
+msgid "Folder and Files"
+msgstr "Ordner und Dateien"
+
+#: ../admin.ntree.php:102 ../class.system.php:483
+msgid "Folder and Numeric"
+msgstr "Ordner und Numerisch"
+
+#: ../admin.ntree.php:108 ../class.system.php:488
+msgid "TOC List Color"
+msgstr "TOC Listen-Farben"
+
+#: ../admin.ntree.php:122 ../class.system.php:499
+msgid "Anchor Linking"
+msgstr "Anker-Verlinkung"
+
+#: ../admin.ntree.php:126 ../class.system.php:501
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: ../admin.ntree.php:127 ../class.system.php:502
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#: ../admin.ntree.php:133 ../class.system.php:507
+msgid "Additional CSS"
+msgstr "Deine CSS Eigenschaften"
+
+#: ../admin.ntree.php:141
+msgid "Shortcode Output"
+msgstr "Shortcode Ausgabe"
+
+#: ../admin.ntree.php:150
+msgid "Save as Default"
+msgstr "Als Standard speichern"
+
+#: ../admin.ntree.php:151
+msgid "Restore Default"
+msgstr "Standard wiederherstellen"
+
+#: ../admin.ntree.php:152
+msgid "Generate Shortcode"
+msgstr "Shortcode generieren"
+
+#: ../class.system.php:69
+msgid "Configure this plugin"
+msgstr "Dieses Plugin konfigurieren"
+
+#: ../class.system.php:69
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../class.system.php:290
+msgid "Table of Contents"
+msgstr "Inhaltsverzeichnis"
+
+#: ../class.system.php:292
+msgid ""
+"Show a Table of Contents Widget on each post, page and/or costum-post-type."
+msgstr "Zeige ein Inhaltsverzeichnis-Widget auf jedem Beitrag und jeder Seite."
+
+#: ../class.system.php:412
+msgid "Use default settings"
+msgstr "Standard Einstellungen nutzen"
+
+#: ../class.system.php:413
+msgid "Use costum settings below"
+msgstr "Folgende Einstellungen nutzen"
+
+#: ../class.system.php:418
+#, php-format
+msgid "Change the default settings <a href='%s'>here</a>."
+msgstr "Ändere die Standard-Einstellungen <a href='%s'>hier</a>."
+
+#: ../class.system.php:422
+msgid "Widget Title"
+msgstr "Widget Titel"
+
+#: ../class.toc.php:196
+msgid "Error: The Plugin cannot create a list, please check your post-content!"
+msgstr ""
+"Fehler: Das Plugin konnte keine Liste erstellen, bitte prüfen den Inhalt!"
+
+#: ../class.toc.php:212
+msgid "Error: The text-anchors could not be created."
+msgstr "Fehler: Die Text-Verankerungen konnten nicht erstellt werden."
+
+#: ../class.toc.php:225
+msgid "Error: An error occurred during the TOC-rendering."
+msgstr "Fehler: Ein Fehler trat während des TOC-Renderings auf."

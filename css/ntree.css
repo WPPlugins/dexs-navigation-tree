@@ -1,0 +1,233 @@
+/* @start GENERAL */
+.dexs-toc{
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	clear: inherit !important;
+}
+.dexs-toc>.dexs-toc-container{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.dexs-toc>.dexs-toc-container .dexs-toc-title{
+	padding: 10px;
+}
+.dexs-toc>.dexs-toc-container ul,
+.dexs-toc>.dexs-toc-container ol{
+	width: auto;
+	margin: 0;
+	padding: 5px 10px;
+	font: inherit;
+	font-family: inherit;
+}
+.dexs-toc>.dexs-toc-container ul:hover,
+.dexs-toc>.dexs-toc-container ol:hover{
+	margin: 0;
+	padding: 5px 10px;
+}
+.dexs-toc>.dexs-toc-container ul ul,
+.dexs-toc>.dexs-toc-container ol ol{
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+.dexs-toc>.dexs-toc-container ul ul:hover,
+.dexs-toc>.dexs-toc-container ol ol:hover{
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+.dexs-toc>.dexs-toc-container ul li,
+.dexs-toc>.dexs-toc-container ol li{
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	white-space: nowrap;
+	font-family: inherit;
+	list-style-position: inside;
+}
+.dexs-toc>.dexs-toc-container ol li:before,
+.dexs-toc>.dexs-toc-container ul li:before{
+	display: none;
+	font: inherit;
+	font-family: inherit;
+}
+.dexs-toc>.dexs-toc-container ul li:hover,
+.dexs-toc>.dexs-toc-container ol li:hover{
+	margin: 0;
+	padding: 0;
+}
+.dexs-toc>.dexs-toc-container ul li a,
+.dexs-toc>.dexs-toc-container ol li a{
+	display: inline-block;
+	font: inherit;
+	font-family: inherit;
+	white-space: nowrap;
+}
+.dexs-toc>.dexs-toc-container ul li a:before,
+.dexs-toc>.dexs-toc-container ol li a:before{
+	display: none;
+}
+/* @end GENERAL */
+
+/* @start NUMERIC */
+.dexs-toc>.dexs-toc-container.dexs-toc-style-num ul li,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-num ol li{
+	list-style-type: decimal !important;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-num ul li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-num ol li:before{
+	content: "";
+}
+/* @end NUMERIC */
+
+/* @start LEVEL NUMERIC */
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol{
+	counter-reset: list;
+	list-style-type: none;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li:before{
+	margin: 0;
+	padding: 0 2px 0 0;
+	display: inline-block;
+	counter-increment: list;
+	content: counter(list) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol{
+	counter-reset: slist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li:before{
+	counter-increment: slist;
+	content: counter(list) ". " counter(slist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol{
+	counter-reset: sslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol>li:before{
+	counter-increment: sslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol>li>ol{
+	counter-reset: ssslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol>li>ol>li:before{
+	counter-increment: ssslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ". " counter(ssslist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol>li>ol>li>ol{
+	counter-reset: sssslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol>li>ol>li>ol>li:before{
+	counter-increment: sssslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ". " counter(ssslist) ". " counter(sssslist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul>li>ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol>li>ol>li>ol>li>ol{
+	counter-reset: ssssslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ul>li>ul>li>ul>li>ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-level_num ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before{
+	counter-increment: ssssslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ". " counter(ssslist) ". " counter(sssslist) ". " counter(ssssslist) ".";
+}
+/* @end LEVEL NUMERIC */
+
+/* @start FOLDER NUMERIC */
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol{
+	counter-reset: list;
+	list-style-type: none;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li:before{
+	margin: 0;
+	padding: 0 2px 0 0;
+	display: inline-block;
+	counter-increment: list;
+	content: "\f318";
+	font: normal 20px/1 'dashicons';
+	-webkit-font-smoothing: antialiased;
+	vertical-align: top;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol{
+	counter-reset: slist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li:before{
+	counter-increment: slist;
+	font: inherit;
+	font-family: inherit;
+	content: counter(list) ". " counter(slist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol{
+	counter-reset: sslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol>li:before{
+	counter-increment: sslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol>li>ol{
+	counter-reset: ssslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol>li>ol>li:before{
+	counter-increment: ssslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ". " counter(ssslist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol>li>ol>li>ol{
+	counter-reset: sssslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol>li>ol>li>ol>li:before{
+	counter-increment: sssslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ". " counter(ssslist) ". " counter(sssslist) ".";
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul>li>ul>li>ul>li>ul,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol>li>ol>li>ol>li>ol{
+	counter-reset: ssssslist;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ul>li>ul>li>ul>li>ul>li>ul>li>ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder_num ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before{
+	counter-increment: ssssslist;
+	content: counter(list) ". " counter(slist) ". " counter(sslist) ". " counter(ssslist) ". " counter(sssslist) ". " counter(ssssslist) ".";
+}
+/* @start FOLDER NUMERIC */
+
+/* @start FOLDER */
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder ul>li,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder ol>li{
+	list-style-type: none;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder ul>li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder ol>li:before{
+	margin: 0;
+	padding: 0 2px 0 0;
+	display: inline-block;
+	content: "\f318";
+	font: normal 20px/1 'dashicons';
+	-webkit-font-smoothing: antialiased;
+	vertical-align: top;
+}
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder ul>li>ul li:before,
+.dexs-toc>.dexs-toc-container.dexs-toc-style-folder ol>li>ol li:before{
+	content: "\f498";
+	font: normal 20px/1 'dashicons';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	vertical-align: top;
+}
+/* @end FOLDER */

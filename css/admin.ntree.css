@@ -1,0 +1,157 @@
+.ntree_header{
+	margin: 0;
+	padding: 10px 0;
+	display: block;
+}
+.ntree_header span{
+	display: inline-block;
+	border-width: 0px;
+	border-style: solid;
+}
+.ntree_header span.ntree_headerIcon{
+	color: #d0d0d0;
+	height: 36px;
+	margin: 0;
+	padding: 0 10px 0 0;
+	font-size: 26px;
+	line-height: 36px;
+	vertical-align: top;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: color 150ms linear;
+	-ms-transition: color 150ms linear;
+	-o-transition: color 150ms linear;
+	transition: color 150ms linear;
+}
+.ntree_header:hover span.ntree_headerIcon{
+	color: #0074a2;
+}
+.ntree_header span.ntree_headerTitle{
+	color: #aaa;
+	margin: 0;
+	padding: 0 10px 5px 10px;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 30px;
+	border-color: #d0d0d0;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: color 150ms linear;
+	-ms-transition: color 150ms linear;
+	-o-transition: color 150ms linear;
+	transition: color 150ms linear;
+}
+.ntree_header:hover span.ntree_headerTitle{
+	color: #0074a2;
+}
+.ntree_header span.ntree_headerVersion{
+	color: #fff;
+	margin: 6px 0 0 10px;
+	padding: 2px 5px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #d0d0d0;;
+	cursor: pointer;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-transition: background 150ms linear;
+	-moz-transition: background 150ms linear;
+	-ms-transition: background 150ms linear;
+	-o-transition: background 150ms linear;
+	transition: background 150ms linear;
+}
+.ntree_header span.ntree_headerVersion:hover{
+	background-color: #0074a2;
+}
+.ntree_table{
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.ntree_table tr th,
+.ntree_table tr td{
+	padding: 10px;
+}
+.ntree_table tr th{
+	width: 200px;
+	text-align: left;
+	vertical-align: top;
+}
+.ntree_table tr td.ntree_help{
+	width: 50px;
+	padding: 0;
+	text-align: center;
+}
+.ntree_table tr td input[type=text],
+.ntree_table tr td select{
+	width: 250px;
+}
+.ntree_border_input{
+	width: 100%;
+	height: 28px;
+	position: relative;
+	display: block;
+}
+.ntree_border_input.border input:first-child{
+	width: 20% !important;
+	height: 28px;
+	margin: 0;
+	float: left;
+	border-right: none;
+}
+.ntree_border_input.border select{
+	width: 40% !important;
+	margin: 0;
+	float: left;
+}
+.ntree_border_input.border input.ntree_border_color{
+	width: 40% !important;
+	height: 28px;
+	margin: 0;
+	float: left;
+	border-left: none;
+}
+.ntree_border_input.color>input{
+	width: 33% !important;
+	height: 28px;
+	margin: 0;
+	float: left;
+}
+.ntree_border_input.color>input.ntree_font_color{
+	border-right: none;
+}
+.ntree_border_input.color>input.ntree_link_hover_color{
+	border-left: none;
+}
+.ntree_border_input div.iris-picker{
+	margin: 0 0 0 5px;
+	position: absolute;
+	left: 100%;
+}
+.dexs-ntree-widget .ntree_border_input div.iris-picker{
+	margin: 0 5px 0 0;
+	right: 100%;
+	left: auto;
+}
+.dexs-ntree-preview{
+	width: 350px;
+}
+
+/* WIDGET */
+.dexs-ntree-widget section{
+	margin: 10px 0 20px 0;
+	display: block;
+}
+.dexs-ntree-widget label{
+	margin: 5px 0 0 0;
+	display: block;
+}
+.dexs-ntree-widget label.head{
+	color: #0074A2;
+	margin: 0 0 5px 0;
+	padding: 0 10px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
